@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="helloo"/>
+<aop-project name="DI"/>
+<aop-project name="SpringCollection"/>
+<aop-project name="SpringMVC"/>
+</aop-reference-model>

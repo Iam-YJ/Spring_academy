@@ -1,0 +1,23 @@
+package board.boardDTO;
+
+import java.sql.Date;
+
+public class BoradDTO {
+
+	private int seq ;
+	private String  id; 
+	private String	  name;
+	private String title ;
+	private String content;
+	private String filename;
+	private int hit ;
+	private Date logtime;
+	  
+	
+	public BoardDTO() {
+		
+	}
+	
+	
+	
+}

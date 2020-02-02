@@ -1,0 +1,18 @@
+package ex;
+
+import java.util.Set;
+
+public class MyList {
+	
+	private MyList<String> list;
+	
+	public MyList<String> getList(){
+		return list;
+	}
+	
+	public void setList(List<String> list) {
+		this.list = list;
+		
+	}
+
+}

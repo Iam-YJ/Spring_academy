@@ -1,0 +1,8 @@
+package board.controller;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet(".brd")
+public class Controller {
+
+}

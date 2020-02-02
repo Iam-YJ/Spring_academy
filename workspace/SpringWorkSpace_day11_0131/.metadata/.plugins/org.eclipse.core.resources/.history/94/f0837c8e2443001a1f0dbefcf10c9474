@@ -1,0 +1,21 @@
+package controller;
+
+import org.springframework.stereotype.Controller;
+
+import service.BoardService;
+
+@Controller
+//어노테이션을 통해서 이게 컨트롤러임을 알려줘야한다 
+public class BoardController {
+	
+	private BoardService service;
+	
+	public BoardController() {
+		System.out.println("-----BoradController 생성자 -----");
+	}
+	
+	public void setService(BoardService service) {
+		this.service = service;
+	}
+
+}

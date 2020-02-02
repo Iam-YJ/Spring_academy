@@ -1,0 +1,14 @@
+package controller.login;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+import util.Action;
+import util.ActionForward;
+
+@WebServlet("*.do") // /MyHome/ ........  .do
+public class Controller extends HttpServlet {
+
+	Action action;
+	ActionForward actionForward;
+}

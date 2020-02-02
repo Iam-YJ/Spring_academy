@@ -1,0 +1,11 @@
+package ex;
+
+import java.util.Properties;
+
+public class MyProp {
+
+	private Properties prop;
+	
+	
+	
+}

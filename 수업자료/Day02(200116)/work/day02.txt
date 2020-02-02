@@ -1,0 +1,55 @@
+SQL> create table sample(
+  2  num number,
+  3  name varchar2(10),
+  4  reg date
+  5  );
+
+테이블이 생성되었습니다.
+
+SQL> commit;
+
+커밋이 완료되었습니다.
+
+SQL> alter user c##spring default tablespace users quota unlimited on users;
+
+사용자가 변경되었습니다.
+
+SQL> create table sample(
+  2  num number,
+  3  name varchar2(10),
+  4  reg date
+  5  );
+create table sample(
+             *
+1행에 오류:
+ORA-00955: 기존의 객체가 이름을 사용하고 있습니다. 
+
+
+SQL> create table sample1(
+  2  num number,
+  3  name varchar2(10),
+  4  reg date
+  5  );
+
+테이블이 생성되었습니다.
+
+SQL> insert into sample1(num,name,reg) values(1,'김민준',to_date('2019-11-14'));
+
+1 개의 행이 만들어졌습니다.
+
+SQL> insert into sample1 values(2,'다현','1998-05-28');
+
+1 개의 행이 만들어졌습니다.
+
+SQL> select * from sample1;
+
+       NUM NAME                 REG                                             
+---------- -------------------- --------                                        
+         1 김민준               19/11/14                                        
+         2 다현                 98/05/28                                        
+
+SQL> commit;
+
+커밋이 완료되었습니다.
+
+SQL> spool off

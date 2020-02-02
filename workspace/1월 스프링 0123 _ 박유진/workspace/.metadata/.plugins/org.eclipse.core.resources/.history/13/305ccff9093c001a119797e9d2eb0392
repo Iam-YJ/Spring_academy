@@ -1,0 +1,9 @@
+package controller.login;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/Login/Login")
+public class LoginForm extends HttpServlet{
+
+}

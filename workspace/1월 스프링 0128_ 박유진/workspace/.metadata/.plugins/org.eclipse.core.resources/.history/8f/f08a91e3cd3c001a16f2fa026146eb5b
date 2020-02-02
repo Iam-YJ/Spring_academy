@@ -1,0 +1,13 @@
+package board.boardDAO;
+
+import java.sql.PreparedStatement;
+
+public class boardDAO {
+
+	private Connection con;
+	private PreparedStatement ps;
+	private ResultSet rs;
+	
+	
+	
+}

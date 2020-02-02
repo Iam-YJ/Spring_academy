@@ -1,0 +1,27 @@
+package board.action;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.oreilly.servlet.MultipartRequest;
+
+import util.Action;
+
+public class CheckWriteAction implements Action {
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		BoardDTO dto = new BoardDTO();
+		//MultipartRequest 按眉 积己 鞘夸
+		
+		MultipartRequest mr = new MultipartRequest();
+		
+		//1. request 按眉 持绢具茄促 
+	}
+	
+	
+}

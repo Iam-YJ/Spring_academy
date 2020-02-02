@@ -1,0 +1,19 @@
+package controller.login;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+import util.Action;
+import util.ActionForward;
+
+
+
+@WebServlet("*.do") // /MyHome/.....  . do 으로 시작하는 모든 것은 여기로 온다 
+public class Controller extends HttpServlet {
+
+	Action action;
+	ActionForward actionForward;
+	
+	
+	
+}

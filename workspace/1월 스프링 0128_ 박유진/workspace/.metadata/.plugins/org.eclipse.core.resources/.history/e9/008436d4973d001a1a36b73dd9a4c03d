@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<jsp:include page="/Layout/Header.jsp"/>
+	<div align="center">
+		<form action="/MyHome/CheckWrite.brd" method="post" name="write">
+			<input type="hidden" name="id" value="${login }">
+			<table id="table">
+				<tr>
+					<th>제목</th>
+					<td><input type 
+			</table>
+		</form>
+	</div>
+<jsp:include page="/Layout/Footer.jsp"/>

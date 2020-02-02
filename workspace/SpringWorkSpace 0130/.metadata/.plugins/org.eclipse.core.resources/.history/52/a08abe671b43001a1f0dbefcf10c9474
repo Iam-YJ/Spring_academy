@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		<!-- property 태그는 클래스 내부에 있는 setter 메소드를 호출하게 되는 태그이다
+		셋터인젝션 -->
+		
+	<bean id="p1" class="vo.PersonVO">
+		<property name="name" value="김민준"/>
+		<property name="age" value="20"/>
+		<property name="tel" value="010-3666-6768"/>
+	</bean>
+	
+	<bean id="p2" class="vo.PersonVO">
+		<!-- 생성자(constructor) 인젝션  -->
+		<constructor-arg value="손승연"/>
+		<constructor-arg value="27"/>
+		<constructor-arg value="111111"/>
+	</bean>
+	
+	<bean id="nameBean" class="java.lang.String">
+	<constructor-arg value="홍길동"/>
+	</bean>
+	<bean id="ageBean" class="java.lang.Integer">
+	<constructor-arg value="20"/>
+	</bean>
+	<bean id="telBean" class="java.lang.String">
+	<constructor-arg value="010-3333-3333"/>
+	</bean>
+	<bean id="p3" class="vo.PersonVO">
+	<property name="name" ref="nameBean"/>
+	<property name="age" ref="ageBean"/>
+	<property name="tel" ref="telBean"/>
+	
+	</bean>
+</beans>

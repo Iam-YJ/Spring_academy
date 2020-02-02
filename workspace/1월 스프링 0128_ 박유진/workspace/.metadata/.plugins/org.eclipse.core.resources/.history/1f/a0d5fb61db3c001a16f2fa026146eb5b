@@ -1,0 +1,6 @@
+package board.action;
+
+public class BoardListAction implements Action  {
+
+	
+}

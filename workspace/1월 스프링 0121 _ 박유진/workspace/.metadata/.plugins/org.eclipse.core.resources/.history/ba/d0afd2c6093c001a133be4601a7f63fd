@@ -1,0 +1,9 @@
+package controller.login;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/Login/Login") //login으로 들어온 애는 이 클래스를 실행시킬 것이다.
+public class LoginForm extends HttpServlet {
+
+}

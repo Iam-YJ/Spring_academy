@@ -1,0 +1,20 @@
+package com.spring.com;
+
+import org.springframework.stereotype.Controller;
+
+//Component
+//-Controller
+//-Service
+//-Repository 이 3개를 상속받았다.
+
+//Controller를 적는 이유는 상속 관계에서 객체를 조금 더 정확하게 영역을 구별할 수 있도록 Controller를 적는다 
+
+@Controller //어노테이션이 있어서 auto-detecting으로 읽힌다 
+
+public class TestController {
+	
+	public TestController() {
+		System.out.println("---TestController 생성자---");
+	}
+
+}

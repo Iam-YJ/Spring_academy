@@ -1,0 +1,9 @@
+package ex;
+
+import java.util.Set;
+
+public class MySet {
+	
+	private Set<String> set
+
+}

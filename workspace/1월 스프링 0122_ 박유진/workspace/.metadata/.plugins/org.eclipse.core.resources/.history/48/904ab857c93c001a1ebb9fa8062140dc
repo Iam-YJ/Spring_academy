@@ -1,0 +1,5 @@
+package controller.login.action;
+
+public class CheckLoginAction {
+
+}

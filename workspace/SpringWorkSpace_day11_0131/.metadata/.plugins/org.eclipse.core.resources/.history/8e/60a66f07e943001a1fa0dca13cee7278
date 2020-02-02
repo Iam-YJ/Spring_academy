@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="mySetBean" class="ex.MySet">
+		<property name="set">
+			<!-- Set data를 만들꺼다.. -->
+			<set><!-- new HashSet() -->
+				<value>서울</value> <!--set.add("서울"); -->
+				<value>대전</value> <!--set.add("대전"); -->
+				<value>대구</value> <!--set.add("대구"); -->
+				<value>부산</value> <!--set.add("부산"); -->
+
+
+			</set>
+		</property>
+	</bean>
+
+	<bean id="myListBean" class="ex.MyList">
+		<property name="list">
+			<list>
+				<value>사과</value>
+				<value>배</value>
+				<value>수박</value>
+				<value>참외</value>
+				<value>포도</value>
+			</list>
+		</property>
+	</bean>
+
+
+	<bean id="myMapBean" class="ex.MyMap">
+		<property name="map">
+			<map> <!-- map은 key를 통해 value를 관리해서, key와 value가 한 쌍이다 -->
+				<entry key="hong" value="1111" />
+				<entry key="kim" value="2222" />
+				<entry key="park" value="3333" />
+				<entry key="lee" value="4444" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="myPropBean" class="ex.MyProp">
+		<property name="prop">
+			<map> <!-- map은 key를 통해 value를 관리해서, key와 value가 한 쌍이다 -->
+				<entry key="hong" value="1111" />
+				<entry key="kim" value="2222" />
+				<entry key="park" value="3333" />
+				<entry key="lee" value="4444" />
+			</map>
+		</property>
+	</bean>
+
+</beans>
