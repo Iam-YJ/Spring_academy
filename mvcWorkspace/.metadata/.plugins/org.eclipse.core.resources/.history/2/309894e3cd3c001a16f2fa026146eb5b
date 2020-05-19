@@ -1,0 +1,31 @@
+package board.boardDAO;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+import com.sun.corba.se.pept.transport.Connection;
+
+public class BoardDAO {
+
+	private Connection con;
+	private PreparedStatement ps;
+	private ResultSet rs;
+	
+	private static DataSource ds;
+	
+	private BoardDAO() {
+		try {
+			Context context = new InitialContext();
+			ds = (DataSource)context.lookup("java:comp/env/jdbc/oracle");
+			
+		}catch(NamingException e) {
+			e.printStackTrace();
+			
+		}
+	}
+}

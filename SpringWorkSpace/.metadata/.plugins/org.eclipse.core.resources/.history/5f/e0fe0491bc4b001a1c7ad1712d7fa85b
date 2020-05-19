@@ -1,0 +1,17 @@
+package controller;
+
+import org.springframework.stereotype.Controller;
+
+import dao.BoardDAO;
+
+@Controller
+public class BoardController {
+
+	private BoardDAO board_dao;
+	
+	public BoardController(BoardDAO board_dao) {
+		this.board_dao = board_dao;
+	}
+	
+
+}

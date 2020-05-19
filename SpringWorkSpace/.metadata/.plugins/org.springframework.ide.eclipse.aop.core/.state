@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="DI"/>
+<aop-project name="helloo"/>
+<aop-project name="SpringAutoDetect_Autowire"/>
+<aop-project name="MyBatis"/>
+<aop-project name="Visit"/>
+<aop-project name="SpringCollection"/>
+<aop-project name="Parameter"/>
+<aop-project name="FileUpload"/>
+<aop-project name="SpringMVC"/>
+<aop-project name="SpringBoard"/>
+</aop-reference-model>

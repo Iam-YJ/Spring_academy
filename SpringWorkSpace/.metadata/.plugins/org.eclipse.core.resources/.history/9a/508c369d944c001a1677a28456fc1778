@@ -1,0 +1,24 @@
+package controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class FileUploadController {
+
+	public static final String VIEW_PATH = "/WEB-INF/views/";
+	
+	
+	@RequestMapping(value = {"/","/insert_form.do"})
+	public String insert_form() {
+		
+		return VIEW_PATH + "insert_form.jsp";
+	}
+	
+	@RequestMapping("/upload.do")
+	public String upload(PhotoVO vo ) {
+		String savePath = "c:/MyUpload";
+		
+		
+	}
+}

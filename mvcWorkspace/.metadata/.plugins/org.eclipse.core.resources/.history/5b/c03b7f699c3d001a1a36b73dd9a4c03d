@@ -1,0 +1,22 @@
+package board.action;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import util.Action;
+
+public class CheckWriteAction implements Action {
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		BoardDTO dto = new BoardDTO();
+		//MultipartRequest 객체 생성 필요
+		
+	}
+	
+	
+}

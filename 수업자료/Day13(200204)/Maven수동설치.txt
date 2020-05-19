@@ -1,0 +1,45 @@
+
+Maven
+ - www.mvnrepository.com
+
+JAR파일 수동 설치 하기
+ - 1. 필요한 jar파일 다운로드 받기...
+ - 2. maven 설치
+  - maven.apache.org/download.html
+  - 다운 로드후 원하는 경로에 가서 압축 해제...
+  - 환경변수 설정...
+   - 시스템 변수 -> 새로 만들기 
+    - 변수명 : MAVEN_HOME
+    - 변수값 : Maven 파일 위치값
+   - 변수 설정후에 Path 설정을 잡는다...
+    - 편집 -> %MAVEN_HOME%\bin
+
+Maven 실행시 JAVA_HOME 문제시...
+ - 환경변수 수정.....
+ - cmd창에
+  set JAVA_HOME=자바jdk폴더 경로
+
+JAR파일 설치
+
+mvn install:install-file -Dfile=[파일 풀경로] -DgroupId=[그룹아이디] -DartifactId=[artifactId] -Dversion=[버전정보] -Dpackaging=[jar] -DgeneratePom=true
+
+
+mvn install:install-file -Dfile=c:\ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar -DgeneratePom=true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
